@@ -22,38 +22,33 @@
              $errorArray = "Please fill in your first name";
          }
 
-         print_r($errorArray);
+//not necessary?          print_r($errorArray);
 
 
          if($lastname == "")  {
              $errorArray = "Please fill in your last name";
          }
        
-         print_r($errorArray);
 
          if($email == "")  {
              $errorArray = "Please fill in your email";
          }
        
-         print_r($errorArray);
        
          if($password == "")  {
              $errorArray = "Please fill in your password";
          }
        
-         print_r($errorArray);
 
          if($confirmpassword == "")  {
              $errorArray = "Please confirm your password";
          }
        
-         print_r($errorArray);
 
          if($gender == "")  {
              $errorArray = "Please select your gender";
          }
        
-         print_r($errorArray);
 
 
 
