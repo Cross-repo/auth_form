@@ -22,8 +22,6 @@
              $errorArray = "Please fill in your first name";
          }
 
-//not necessary?          print_r($errorArray);
-
 
          if($lastname == "")  {
              $errorArray = "Please fill in your last name";
@@ -50,7 +48,7 @@
          }
        
 
-
+         print_r($errorArray);
 
 
 
