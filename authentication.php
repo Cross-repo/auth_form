@@ -48,10 +48,38 @@
          }
        
 
-         print_r($errorArray);
+         
+                $check = sizeof ($errorArray);
+                if ($check != 0) {  
+                            print_r($errorArray);
+                                            } 
 
 
 
+
+     /*    $array_data =[
+            'firstname'   > $firstname,
+            'lastname'   > $lastname,
+            'email'   > $email,
+            'gender'   > $gender
+
+    ];  */
+
+       //  echo $firstname . $lastname . $email . $gender;
+
+       //  file_put_contents('db/' . $array_data['firstname'] . ".txt" , $array_data);
+
+            $file = fopen ('C:\\xampp\\htdocs\\Zuri\\BasicAuth\\db\\' . $email. ".txt" , "w");
+
+           
+        fwrite($file, $password . "\n");
+        fwrite($file, $confirmpassword . "\n");    
+        fwrite($file, $firstname . "\n");
+        fwrite($file, $lastname . "\n");
+        fwrite($file, $email . "\n");
+        fwrite($file, $gender . "\n");
+           
+            echo "User registered successfully";
 
         /*      $array_data =[
                       'firstname'   > $firstname,
